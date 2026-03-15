@@ -19,7 +19,7 @@ const PUBLIC_ROUTES = [
     '/api/register', // Register API
 ];
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
     const { pathname } = request.nextUrl;
 
     // Check if active path is protected
