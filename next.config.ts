@@ -10,9 +10,6 @@ const config: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
   // Ensure consistent manifest handling, especially in production
   output: isProd ? "standalone" : undefined,
 };
